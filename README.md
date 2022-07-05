@@ -15,50 +15,52 @@ $ git clone git@github.com:knewitzgui/api-eletrodomesticos.git
 
 Acesso ao diretório
 
-``
-cd api-eletrodomesticos
-``
+```bash
+$ cd api-eletrodomesticos
+```
 
 Instalação de dependências
 
-``
-composer install
-``
+```bash
+$ composer install
+```
 
 Execução do servidor local com Docker
 
-``
-cd laradock
-``
-``
-docker-compose up -d nginx mysql
-``
+```bash
+$ cd laradock
+```
+```bash
+$ docker-compose up -d nginx mysql
+```
 
 Executar as migrations do Laravel
 
-``
-php artisan migrate
-``
+```bash
+$ php artisan migrate
+```
 
 O servidor estará no ar no seguinte endereço
 
-``
-http://localhost:8888
-``
+```bash
+$ http://localhost:8888
+```
 
 O MySQL estará rodando na porta 3333
 
 ## Exemplos de requisições para a API
 
 ###Listagem de produtos (GET)
-``
-http://localhost:8888/api/produtos
-``
+
+```bash
+$ http://localhost:8888/api/produtos
+```
 
 ###Cadastro de produtos (POST)
-``
-http://localhost:8888/api/produtos
-``
+
+```bash
+$ http://localhost:8888/api/produtos
+```
 Enviando no seu payload os seguintes dados:
 -name
 -description
@@ -66,45 +68,52 @@ Enviando no seu payload os seguintes dados:
 -brand_id
 
 ###Atualizar produto (PUT)
-``
-http://localhost:8888/api/produtos/{id}
-``
+
+```bash
+$ http://localhost:8888/api/produtos/{id}
+```
 Fazer o envio de JSON com os dados de atualização do produto para a URL localhost:8888/api/produtos/ + id do produto
 
 ###Deletar produto (DELETE)
-``
-http://localhost:8888/api/produtos/{id}
-``
+
+```bash
+$ http://localhost:8888/api/produtos/{id}
+```
 Enviar o método DELETE para a URL localhost:8888/api/produtos/ + id do produto
 
 ###Listar produtos filtrando por marca (GET)
-``
-http://localhost:8888/api/produtos?brand_id={id}
-``
+
+```bash
+$ http://localhost:8888/api/produtos?brand_id={id}
+```
 Efetuar um GET na URL base de produtos enviando como parâmetro de query o id da marca(brand_id)
 
 ###Listar marcas (GET)
-``
-http://localhost:8888/api/marcas
-``
+
+```bash
+$ http://localhost:8888/api/marcas
+```
 
 ###Cadastro de marcas (POST)
-``
-http://localhost:8888/api/marcas
-``
+
+```bash
+$ http://localhost:8888/api/marcas
+```
 Enviando no seu payload o seguinte dado:
 -name
 
 ###Atualizar marca (PUT)
-``
-http://localhost:8888/api/marcas/{id}
-``
+
+```bash
+$ http://localhost:8888/api/marcas/{id}
+```
 Fazer o envio de JSON com os dados de atualização da marca para a URL localhost:8888/api/marcas/ + id da marca
 
 ###Deletar marca (DELETE)
-``
-http://localhost:8888/api/marcas/{id}
-``
+
+```bash
+$ http://localhost:8888/api/marcas/{id}
+```
 Enviar o método DELETE para a URL localhost:8888/api/marcas/ + id da marca
 
 ## Retornos
