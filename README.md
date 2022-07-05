@@ -8,21 +8,25 @@ Dependências: Composer, PHP 7.4
 ## Instalação
 
 Clone
+
 ``
 git clone git@github.com:knewitzgui/api-eletrodomesticos.git
 ``
 
 Acesso ao diretório
+
 ``
 cd api-eletrodomesticos
 ``
 
 Instalação de dependências
+
 ``
 composer install
 ``
 
 Execução do servidor local com Docker
+
 ``
 cd laradock
 ``
@@ -31,14 +35,17 @@ docker-compose up -d nginx mysql
 ``
 
 Executar as migrations do Laravel
+
 ``
 php artisan migrate
 ``
 
 O servidor estará no ar no seguinte endereço
+
 ``
 http://localhost:8888
 ``
+
 O MySQL estará rodando na porta 3333
 
 ## Exemplos de requisições para a API
