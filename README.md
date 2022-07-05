@@ -6,11 +6,12 @@ Tecnologias utilizadas no projeto: Laravel 8, Laradock, MySQL, Insominia(para o 
 Dependências: Composer, PHP 7.4
 
 ## Instalação
+Utilizando Gitbash:
 
 Clone
 
 ```bash
-$ git clone git@github.com:knewitzgui/api-eletrodomesticos.git
+$ git clone https://github.com/knewitzgui/api-eletrodomesticos.git
 ```
 
 Acesso ao diretório
