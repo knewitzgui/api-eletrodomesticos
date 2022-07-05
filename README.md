@@ -50,13 +50,13 @@ O MySQL estará rodando na porta 3333
 
 ## Exemplos de requisições para a API
 
-###Listagem de produtos (GET)
+### Listagem de produtos (GET)
 
 ```bash
 $ http://localhost:8888/api/produtos
 ```
 
-###Cadastro de produtos (POST)
+### Cadastro de produtos (POST)
 
 ```bash
 $ http://localhost:8888/api/produtos
@@ -67,34 +67,34 @@ Enviando no seu payload os seguintes dados:
 -voltage
 -brand_id
 
-###Atualizar produto (PUT)
+### Atualizar produto (PUT)
 
 ```bash
 $ http://localhost:8888/api/produtos/{id}
 ```
 Fazer o envio de JSON com os dados de atualização do produto para a URL localhost:8888/api/produtos/ + id do produto
 
-###Deletar produto (DELETE)
+### Deletar produto (DELETE)
 
 ```bash
 $ http://localhost:8888/api/produtos/{id}
 ```
 Enviar o método DELETE para a URL localhost:8888/api/produtos/ + id do produto
 
-###Listar produtos filtrando por marca (GET)
+### Listar produtos filtrando por marca (GET)
 
 ```bash
 $ http://localhost:8888/api/produtos?brand_id={id}
 ```
 Efetuar um GET na URL base de produtos enviando como parâmetro de query o id da marca(brand_id)
 
-###Listar marcas (GET)
+### Listar marcas (GET)
 
 ```bash
 $ http://localhost:8888/api/marcas
 ```
 
-###Cadastro de marcas (POST)
+### Cadastro de marcas (POST)
 
 ```bash
 $ http://localhost:8888/api/marcas
@@ -102,14 +102,14 @@ $ http://localhost:8888/api/marcas
 Enviando no seu payload o seguinte dado:
 -name
 
-###Atualizar marca (PUT)
+### Atualizar marca (PUT)
 
 ```bash
 $ http://localhost:8888/api/marcas/{id}
 ```
 Fazer o envio de JSON com os dados de atualização da marca para a URL localhost:8888/api/marcas/ + id da marca
 
-###Deletar marca (DELETE)
+### Deletar marca (DELETE)
 
 ```bash
 $ http://localhost:8888/api/marcas/{id}
