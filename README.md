@@ -9,9 +9,9 @@ Dependências: Composer, PHP 7.4
 
 Clone
 
-``
-git clone git@github.com:knewitzgui/api-eletrodomesticos.git
-``
+```bash
+$ git clone git@github.com:knewitzgui/api-eletrodomesticos.git
+```
 
 Acesso ao diretório
 
